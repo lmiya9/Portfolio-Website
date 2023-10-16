@@ -3,19 +3,9 @@ Add default colors and font families in root
 */
 :root {
 }
-@media (max-width: 995px) {
-  /* .contact-form {
-        display: none;
-    } */
-  /* #contact {
-    display: none;
-  } */
-}
 
 @media (max-width: 575px) {
-  #skills-desktop {
-    display: none;
-  }
+ 
  .skills-shadow::after {
     content: '';
     display: block;
@@ -26,11 +16,6 @@ Add default colors and font families in root
     margin-top: 30px; /* Adjust the margin to position the line */
   }
 }
-/*@media (min-width: 776px) {
-    #skills-mobile {
-        display: none;
-    }
-} */
 
 h1 {
   font-size: 60px;

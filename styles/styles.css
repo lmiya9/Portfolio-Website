@@ -12,9 +12,18 @@ Add default colors and font families in root
   } */
 }
 
-@media (max-width: 776px) {
+@media (max-width: 575px) {
   #skills-desktop {
     display: none;
+  }
+ .skills-shadow::after {
+    content: '';
+    display: block;
+    height: 0.5px; 
+       width: 60%; /* Adjust the width to make it narrower */
+    margin: 0 auto; /* Center the line horizontally */
+    background: rgba(0, 0, 0, 0.2); /* Black with low opacity */
+    margin-top: 30px; /* Adjust the margin to position the line */
   }
 }
 /*@media (min-width: 776px) {
@@ -52,6 +61,7 @@ a  {
 .button-shadow {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .button-main {
   color: white;

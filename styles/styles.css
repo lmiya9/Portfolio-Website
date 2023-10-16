@@ -1,72 +1,93 @@
-
-
 /*
 Add default colors and font families in root
 */
 :root {
-
 }
+@media (max-width: 995px) {
+  /* .contact-form {
+        display: none;
+    } */
+  /* #contact {
+    display: none;
+  } */
+}
+
+@media (max-width: 776px) {
+  #skills-desktop {
+    display: none;
+  }
+}
+/*@media (min-width: 776px) {
+    #skills-mobile {
+        display: none;
+    }
+} */
 
 h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 h4 {
-    color: grey;
+  color: grey;
 }
 .navbar-nav {
-      margin-left: auto;
-      margin-right: 20px;
-    }
+  margin-left: auto;
+  margin-right: 20px;
+}
 
 .navbar-brand {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-.button-main, .button-secondary, a {
-    padding: 15px;
-    text-decoration: none;
+.button-main,
+.button-secondary,
+a {
+  padding: 15px;
+  text-decoration: none;
+}
+
+a  {
+    color: grey;
+    
 }
 .button-shadow {
-       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .button-main {
-    color: white;
-    background: black;
-    border-radius: 25px;
-    padding: 12px 30px;
+  color: white;
+  background: black;
+  border-radius: 25px;
+  padding: 12px 30px;
 }
 .button-secondary {
-    color: white;
-    background: black;
-    border-radius: 25px;
-    padding: 12px 20px;
+  color: white;
+  background: black;
+  border-radius: 25px;
+  padding: 12px 20px;
 }
 
 .padding-container {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .contact-form {
-    margin-left: -360px;
-    margin-top: -80px;
 }
 
 .padding-text {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .bootstrap-icon {
-    padding-top: 20px;
-    padding-left:15px;
+  padding-top: 20px;
+  padding-left: 15px;
 }
 .github-icon {
-    padding-top: 20px;
+  padding-top: 20px;
 
-    padding-left:11px;
+  padding-left: 11px;
 }
 .design-icon {
-    padding-top: 20px;
+  padding-top: 20px;
 
-    padding-left:50px;
+  padding-left: 50px;
 }

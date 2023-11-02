@@ -2,6 +2,10 @@
 Add default colors and font families in root
 */
 :root {
+ --primary-color: black;
+  --secondary-color: grey;
+  --button-text-color: white;
+  --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 575px) {
@@ -24,7 +28,7 @@ h1 {
   font-size: 60px;
 }
 h4 {
-  color: grey;
+  color: var(--secondary-color);
 }
 .navbar-nav {
   margin-left: auto;
@@ -35,31 +39,27 @@ h4 {
   margin-left: 10px;
 }
 
-.button-main,
-.button-secondary,
-a {
-  padding: 15px;
-  text-decoration: none;
-}
 
-a  {
-    color: grey;
+a {
+text-decoration: none;
+color: var(--secondary-color);
+transition: all ease-in-out 250ms;
     
 }
 .button-shadow {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+   box-shadow: var(--box-shadow);
 }
 
 
 .button-main {
-  color: white;
-  background: black;
+  color: var(--button-text-color);
+  background: var(--primary-color);
   border-radius: 25px;
   padding: 12px 30px;
 }
 .button-secondary {
-  color: white;
-  background: black;
+  color: var(--button-text-color);
+  background: var(--primary-color);
   border-radius: 25px;
   padding: 12px 20px;
 }
@@ -68,8 +68,7 @@ a  {
   padding-top: 100px;
 }
 
-.contact-form {
-}
+
 
 .padding-text {
   padding-top: 20px;
@@ -85,7 +84,32 @@ a  {
   padding-left: 11px;
 }
 .design-icon {
-  padding-top: 20px;
+  margin: 20px;
+  
+ 
+}
 
-  padding-left: 50px;
+a.breadcrumb:hover {
+color: var(--primary-color);
+}
+
+h1#hero-about-title {
+color: var(--button-text-color);
+margin-top: -200px;
+margin-left: 40px;
+position: absolute;
+font-size: 60px;
+}
+
+.hero-img-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 0px 360px 0px;
+
 }

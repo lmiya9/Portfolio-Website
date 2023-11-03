@@ -20,9 +20,35 @@ Add default colors and font families in root
     margin-top: 30px; 
   }
 
+  .container.portfolio {
+     width: 80%;
+  }
   
+  .separator2::after {
+    content: '';
+    display: block;
+    height: 0.5px; 
+    width: 150px; 
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.2); 
+}
 }
 
+@media (max-width: 767px) {
+  
+  .separator2::after {
+    content: '';
+    display: block;
+    height: 0.5px; 
+    width: 150px; 
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.2); 
+}
+}
+
+header {
+  height: 100vh;
+}
 
 h1 {
   font-size: 60px;

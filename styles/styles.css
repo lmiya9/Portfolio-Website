@@ -24,19 +24,11 @@ Add default colors and font families in root
      width: 80%;
   }
   
-  .separator2::after {
-    content: '';
-    display: block;
-    height: 0.5px; 
-    width: 150px; 
-    margin-bottom: 40px;
-    background: rgba(0, 0, 0, 0.2); 
-}
 }
 
 @media (max-width: 767px) {
   
-  .separator2::after {
+  .separator::after {
     content: '';
     display: block;
     height: 0.5px; 
@@ -143,10 +135,3 @@ h1#hero-title {
   font-size: 60px;
 }
 
-.separator {
-width: 100px;
-height: 3px;
-margin-bottom: 40px;
-background-color: var(--secondary-color);
-
-}

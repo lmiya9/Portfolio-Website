@@ -2,40 +2,37 @@
 Add default colors and font families in root
 */
 :root {
- --primary-color: black;
+  --primary-color: black;
   --secondary-color: grey;
   --button-text-color: white;
   --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 575px) {
- 
- .skills-shadow::after {
-    content: '';
+  .skills-shadow::after {
+    content: "";
     display: block;
-    height: 0.5px; 
-    width: 60%; 
+    height: 0.5px;
+    width: 60%;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.2); 
-    margin-top: 30px; 
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
   }
 
   .container.portfolio {
-     width: 80%;
+    width: 80%;
   }
-  
 }
 
 @media (max-width: 767px) {
-  
   .separator::after {
-    content: '';
+    content: "";
     display: block;
-    height: 0.5px; 
-    width: 150px; 
+    height: 0.5px;
+    width: 150px;
     margin-bottom: 40px;
-    background: rgba(0, 0, 0, 0.2); 
-}
+    background: rgba(0, 0, 0, 0.2);
+  }
 }
 
 header {
@@ -57,17 +54,14 @@ h4 {
   margin-left: 10px;
 }
 
-
 a {
-text-decoration: none;
-color: var(--secondary-color);
-transition: all ease-in-out 250ms;
-    
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: all ease-in-out 250ms;
 }
 .button-shadow {
-   box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
-
 
 .button-main {
   color: var(--button-text-color);
@@ -86,8 +80,6 @@ transition: all ease-in-out 250ms;
   padding-top: 100px;
 }
 
-
-
 .padding-text {
   padding-top: 20px;
 }
@@ -103,8 +95,6 @@ transition: all ease-in-out 250ms;
 }
 .design-icon {
   margin: 20px;
-  
- 
 }
 
 .sticky-navbar {
@@ -112,13 +102,11 @@ transition: all ease-in-out 250ms;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;}
-
-
-
+  z-index: 1000;
+}
 
 a:hover {
-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .hero-section {
@@ -136,12 +124,12 @@ h1#hero-title {
 }
 
 h2.secondary-heading {
-    font-size: 35px;
-    font-weight: 200;
+  font-size: 35px;
+  font-weight: 200;
 }
 
 .form-spacing {
-    margin-top: -80px;
+  margin-top: -80px;
 }
 
 .skills-container {
@@ -151,4 +139,5 @@ h2.secondary-heading {
 }
 .skills-container.scrolled {
   top: -200px; /* Adjust the value as needed to move it up */
+  margin-bottom: -200px;
 }
